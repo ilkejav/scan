@@ -1,0 +1,66 @@
+{
+  "15": {
+    "title": "FeatureRequests",
+    "description": "Small feature, tweaks, ideas to add to game, to be reviewed and added (or not) to a milestone.",
+    "state": "open",
+    "closed_issues": 0,
+    "open_issues": 6,
+    "closed_at": null
+  },
+  "18": {
+    "title": "Release 0.7.3",
+    "description": "",
+    "state": "open",
+    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_at": null
+  },
+  "19": {
+    "title": "Release 0.7.4",
+    "description": "",
+    "state": "open",
+    "closed_issues": 0,
+    "open_issues": 0,
+    "closed_at": null
+  },
+  "13": {
+    "title": "Release 0.8",
+    "description": "",
+    "state": "open",
+    "closed_issues": 18,
+    "open_issues": 73,
+    "closed_at": null
+  },
+  "17": {
+    "title": "Release 0.7.1",
+    "description": "",
+    "state": "open",
+    "closed_issues": 23,
+    "open_issues": 0,
+    "closed_at": null
+  },
+  "16": {
+    "title": "Release 0.7.2",
+    "description": "",
+    "state": "open",
+    "closed_issues": 17,
+    "open_issues": 6,
+    "closed_at": null
+  },
+  "11": {
+    "title": "Backlog High Priority",
+    "description": "Bug crushing time!",
+    "state": "open",
+    "closed_issues": 105,
+    "open_issues": 132,
+    "closed_at": null
+  },
+  "12": {
+    "title": "Backlog Low Priority",
+    "description": "Bug crushing time!",
+    "state": "open",
+    "closed_issues": 54,
+    "open_issues": 81,
+    "closed_at": null
+  }
+}
