@@ -1,0 +1,58 @@
+{
+  "creator": {
+    "Shatojon": 108,
+    "evaxmeor": 3104,
+    "RobergeSimon": 20,
+    "benoit-sauropod": 55,
+    "ilkejav": 505,
+    "davidtruchon": 1,
+    "frederic-sauropod": 18,
+    "francoisalain": 37,
+    "kimhutchison": 26,
+    "BenSauropodStudio": 4,
+    "JokieW": 34,
+    "sauropodstudio": 0,
+    "strstr": 2,
+    "faviann": 1,
+    "fxdupas": 0
+  },
+  "assignee": {
+    "francoisalain": 283,
+    "davidtruchon": 471,
+    "RobergeSimon": 549,
+    "ilkejav": 130,
+    "JokieW": 621,
+    "benoit-sauropod": 743,
+    "faviann": 428,
+    "kimhutchison": 253,
+    "": 178,
+    "frederic-sauropod": 247,
+    "evaxmeor": 13,
+    "mariepier": 2
+  },
+  "milestone": {
+    "Release 0.7.3": 18,
+    "Release 0.7.2": 18,
+    "Backlog Low Priority": 129,
+    "Backlog High Priority": 220,
+    "Release 0.8": 88,
+    "": 630,
+    "FeatureRequests": 5,
+    "Release 0.7.1": 13,
+    "Release 0.7": 666,
+    "0.7 Feature Complete": 38,
+    "Release 0.6.2": 49,
+    "Release 0.6.0": 851,
+    "Build for the Release 0.5.1": 29,
+    "Build for the Release 0.5.0": 401,
+    "Build For PAX Prime!": 103,
+    "Version 0.4.0 due after PAX": 321,
+    "Demo for PAX": 3,
+    "Version 0.3.5 due for Friday January 16": 1,
+    "Version 0.3.0 due For Christmas": 328
+  },
+  "state": {
+    "open": 327,
+    "closed": 3601
+  }
+}

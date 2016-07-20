@@ -12,7 +12,7 @@
     "description": "",
     "state": "open",
     "closed_issues": 0,
-    "open_issues": 0,
+    "open_issues": 7,
     "closed_at": null
   },
   "19": {
@@ -43,16 +43,16 @@
     "title": "Release 0.7.2",
     "description": "",
     "state": "open",
-    "closed_issues": 17,
-    "open_issues": 6,
+    "closed_issues": 19,
+    "open_issues": 5,
     "closed_at": null
   },
   "11": {
     "title": "Backlog High Priority",
     "description": "Bug crushing time!",
     "state": "open",
-    "closed_issues": 105,
-    "open_issues": 132,
+    "closed_issues": 106,
+    "open_issues": 124,
     "closed_at": null
   },
   "12": {
@@ -60,7 +60,7 @@
     "description": "Bug crushing time!",
     "state": "open",
     "closed_issues": 54,
-    "open_issues": 81,
+    "open_issues": 82,
     "closed_at": null
   }
 }

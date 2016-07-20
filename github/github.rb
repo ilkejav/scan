@@ -4,14 +4,19 @@ require "date"
 require_relative "issues.rb"
 require_relative "collaborators.rb"
 require_relative "milestones.rb"
+require_relative "stats.rb"
+require_relative "login.rb"
 
 class Github_scan
 
   def initialize param = nil
-    @github = Github.new :basic_auth => 'login',
-    :org => 'Sauropod-Studio',
-    :user => 'Sauropod-Studio',
-    :repo => 'castlestory-game'
+    
+    login = Login.new
+    @github = Github.new :basic_auth => login.get_userpass,
+    :org => login.get_org,
+    :user => login.get_user,
+    :repo => login.get_repo
+
   end
 
   def github ; return @github end
@@ -20,24 +25,15 @@ class Github_scan
 
     case param
     when "stats"
+
+      stats = Stats.new
+      response_hash = stats.get_stats
       
-      return "done stats"
-    when "issues"
-
-      response_limit = get_rate_limit
-      response_pages = get_page_count
+      # puts response_hash
       
-      issues = Issues.new(github)
-      response_hash= Hash.new
-
-      for page in 0..response_pages
-        new_page = issues.get_issues(page)
-        response_hash = response_hash.merge(new_page) if new_page
-      end
-
-      write_to_json("Apps/scan/github/", "issues.json", response_hash.sort_by{|k,v| k.to_i })
-
-      return "Done! #{response_hash.size} issues found"
+      write_to_json("Apps/scan/github/", "stats.json", response_hash)      
+      
+      return "Done! stats"
       
     when "collaborators"
       
@@ -47,6 +43,23 @@ class Github_scan
       write_to_json("Apps/scan/github/", "collaborators.json", response_hash)
 
       return "Done! #{response_hash.size} collaborators found"
+
+    when "issues"
+
+      response_limit = get_rate_limit
+      response_pages = get_page_count
+      
+      issues = Issues.new(github)
+      response_hash = Hash.new
+
+      for page in 0..response_pages
+        new_page = issues.get_issues(page)
+        response_hash = response_hash.merge(new_page) if new_page
+      end
+
+      write_to_json("Apps/scan/github/", "issues.json", response_hash)
+
+      return "Done! #{response_hash.size} issues found"
 
     when "milestones"
     
